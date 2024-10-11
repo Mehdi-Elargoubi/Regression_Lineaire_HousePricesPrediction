@@ -63,4 +63,3 @@ Les résultats des modèles de régression (Ridge et Lasso) sont mesurés princi
 
 ## License
 Ce Travail est sous licence MIT. Veuillez vous référer au fichier [LICENSE](LICENSE) pour plus de détails.
-```
