@@ -1,0 +1,25 @@
+
+Je souhaite prédire le prix (colonne `'price'`) des maisons en fonction de la superficie (colonne `'area'`) en utilisant une régression linéaire avec la méthodologie suivante :
+
+- a) Standardiser les données à l'aide de `StandardScaler().fit_transform`.
+  
+- b) Séparer les données en ensembles de test et d'entraînement en utilisant `train_test_split` de `scikit-learn` :  
+  
+  x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
+  
+
+-c) Ajuster le modèle aux données d'entraînement à l'aide de `LinearRegression()` :  
+  model = LinearRegression()
+  model.fit(x_train, y_train)
+
+- d) Évaluer le modèle sur les données de test `x_test` via la fonction `predict` :  
+  y_pred = model.predict(x_test)
+  
+- e) Calculer la MSE (Mean Squared Error) entre les prédictions et `y_test` (vous pouvez vous référer à la documentation de `scikit-learn`).
+
+- f) Étudier l'évolution de la MSE en fonction de l'ajout de caractéristiques supplémentaires `HSE[k]`, où  
+  - \( k = \{ \text{superficie, chambres, salles de bain, étage} \} \).
+
+- g) Répéter le calcul de la MSE pour 100 tests et afficher l'espérance de la MSE.
+
+- h) Ajouter les colonnes non numériques -> conversion en variables binaires (`OneHotEncoder` ou `pd.get_dummies()`).

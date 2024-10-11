@@ -1,0 +1,7 @@
+1- Générer les caractéristiques polynomiales puis fitter un modèle 
+linéaires aux caractéristiques polynomiales (Polynomial Features)
+
+2- Représenter la prédiction sur Xtest = np.linspace(-1, 1, 100) 
+superposé aux données
+     Xpolytest = polynomialFeatures.fit_transform(xtest)
+
